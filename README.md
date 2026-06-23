@@ -65,7 +65,7 @@ spring.datasource.password=your_actual_password
 mvn spring-boot:run
 ```
 
-The server starts at: `http://localhost:8080`
+The server starts at: `http://localhost:8081`
 
 Tables are auto-created by Hibernate on first run (`ddl-auto=update`).
 
@@ -105,7 +105,7 @@ Tables are auto-created by Hibernate on first run (`ddl-auto=update`).
 
 ### 1. Create a Product
 ```
-POST http://localhost:8080/products
+POST http://localhost:8081/products
 Content-Type: application/json
 
 {
@@ -118,17 +118,17 @@ Content-Type: application/json
 
 ### 2. Get All Products
 ```
-GET http://localhost:8080/products
+GET http://localhost:8081/products
 ```
 
 ### 3. Search Products
 ```
-GET http://localhost:8080/products/search?name=lap
+GET http://localhost:8081/products/search?name=lap
 ```
 
 ### 4. Update a Product
 ```
-PUT http://localhost:8080/products/1
+PUT http://localhost:8081/products/1
 Content-Type: application/json
 
 {
@@ -141,12 +141,12 @@ Content-Type: application/json
 
 ### 5. Delete a Product
 ```
-DELETE http://localhost:8080/products/1
+DELETE http://localhost:8081/products/1
 ```
 
 ### 6. Add Stock
 ```
-POST http://localhost:8080/stock/add
+POST http://localhost:8081/stock/add
 Content-Type: application/json
 
 {
@@ -157,7 +157,7 @@ Content-Type: application/json
 
 ### 7. Remove Stock
 ```
-POST http://localhost:8080/stock/remove
+POST http://localhost:8081/stock/remove
 Content-Type: application/json
 
 {
@@ -168,12 +168,12 @@ Content-Type: application/json
 
 ### 8. Get Stock History
 ```
-GET http://localhost:8080/stock/history
+GET http://localhost:8081/stock/history
 ```
 
 ### 9. Dashboard
 ```
-GET http://localhost:8080/dashboard
+GET http://localhost:8081/dashboard
 ```
 
 ---
