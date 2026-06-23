@@ -1,0 +1,26 @@
+package com.university.inventory;
+
+import org.junit.jupiter.api.Test;
+import org.springframework.boot.test.context.SpringBootTest;
+import org.springframework.test.context.TestPropertySource;
+
+/**
+ * Basic Spring Boot context load test.
+ * Verifies the application context starts without errors.
+ */
+@SpringBootTest
+@TestPropertySource(properties = {
+    "spring.datasource.url=jdbc:h2:mem:testdb",
+    "spring.datasource.driver-class-name=org.h2.Driver",
+    "spring.datasource.username=sa",
+    "spring.datasource.password=",
+    "spring.jpa.database-platform=org.hibernate.dialect.H2Dialect",
+    "spring.jpa.hibernate.ddl-auto=create-drop"
+})
+class InventoryManagementApplicationTests {
+
+    @Test
+    void contextLoads() {
+        // If this test passes, the Spring context started successfully
+    }
+}

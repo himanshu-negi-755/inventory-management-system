@@ -1,0 +1,195 @@
+/* ── Root ──────────────────────────────────────── */
+.root-pane {
+    -fx-background-color: #F0F2F5;
+    -fx-font-family: "Segoe UI", "Helvetica Neue", Arial, sans-serif;
+}
+
+/* ── Header bar ───────────────────────────────── */
+.header-bar {
+    -fx-background-color: #1A237E;
+    -fx-effect: dropshadow(gaussian, rgba(0,0,0,0.3), 8, 0, 0, 2);
+}
+
+.header-title {
+    -fx-text-fill: white;
+    -fx-font-size: 20px;
+    -fx-font-weight: bold;
+}
+
+.header-subtitle {
+    -fx-text-fill: #90CAF9;
+    -fx-font-size: 11px;
+}
+
+.status-connected {
+    -fx-text-fill: #69F0AE;
+    -fx-font-size: 13px;
+    -fx-font-weight: bold;
+}
+
+/* ── Tabs ─────────────────────────────────────── */
+.main-tabs {
+    -fx-background-color: #F0F2F5;
+}
+
+.tab-pane .tab-header-area .tab-header-background {
+    -fx-background-color: #1A237E;
+}
+
+.tab-pane .tab {
+    -fx-background-color: transparent;
+    -fx-padding: 8 16 8 16;
+}
+
+.tab-pane .tab .tab-label {
+    -fx-text-fill: #90CAF9;
+    -fx-font-size: 13px;
+    -fx-font-weight: bold;
+}
+
+.tab-pane .tab:selected .tab-label {
+    -fx-text-fill: white;
+}
+
+.tab-pane .tab:selected {
+    -fx-background-color: #283593;
+    -fx-border-color: #69F0AE;
+    -fx-border-width: 0 0 3 0;
+}
+
+/* ── Tab content area ─────────────────────────── */
+.tab-content {
+    -fx-background-color: #F0F2F5;
+}
+
+/* ── Stat cards ───────────────────────────────── */
+.card-value {
+    -fx-font-size: 36px;
+    -fx-font-weight: bold;
+    -fx-text-fill: #1A237E;
+}
+
+.card-label {
+    -fx-font-size: 12px;
+    -fx-text-fill: #555;
+    -fx-font-weight: bold;
+    -fx-text-transform: uppercase;
+}
+
+/* ── Section title ────────────────────────────── */
+.section-title {
+    -fx-font-size: 15px;
+    -fx-font-weight: bold;
+    -fx-text-fill: #1A237E;
+}
+
+/* ── Form panel ───────────────────────────────── */
+.form-panel {
+    -fx-background-color: white;
+    -fx-background-radius: 10;
+    -fx-effect: dropshadow(gaussian, rgba(0,0,0,0.08), 6, 0, 0, 2);
+}
+
+.form-label {
+    -fx-font-size: 12px;
+    -fx-font-weight: bold;
+    -fx-text-fill: #444;
+}
+
+/* ── Inputs ───────────────────────────────────── */
+.text-field, .combo-box {
+    -fx-background-color: #F8F9FA;
+    -fx-border-color: #CDD;
+    -fx-border-radius: 5;
+    -fx-background-radius: 5;
+    -fx-padding: 6 10 6 10;
+    -fx-font-size: 13px;
+}
+
+.text-field:focused, .combo-box:focused {
+    -fx-border-color: #1A237E;
+    -fx-effect: dropshadow(gaussian, rgba(26,35,126,0.2), 4, 0, 0, 0);
+}
+
+/* ── Buttons ──────────────────────────────────── */
+.button {
+    -fx-cursor: hand;
+    -fx-background-radius: 6;
+    -fx-font-size: 13px;
+    -fx-padding: 7 16 7 16;
+    -fx-font-weight: bold;
+}
+
+.btn-primary {
+    -fx-background-color: #1A237E;
+    -fx-text-fill: white;
+}
+
+.btn-primary:hover {
+    -fx-background-color: #283593;
+}
+
+.btn-secondary {
+    -fx-background-color: #E8EAF6;
+    -fx-text-fill: #1A237E;
+    -fx-border-color: #C5CAE9;
+    -fx-border-radius: 6;
+    -fx-border-width: 1;
+}
+
+.btn-secondary:hover {
+    -fx-background-color: #C5CAE9;
+}
+
+.btn-danger {
+    -fx-background-color: #C62828;
+    -fx-text-fill: white;
+}
+
+.btn-danger:hover {
+    -fx-background-color: #B71C1C;
+}
+
+.btn-success {
+    -fx-background-color: #2E7D32;
+    -fx-text-fill: white;
+}
+
+.btn-success:hover {
+    -fx-background-color: #1B5E20;
+}
+
+/* ── TableView ────────────────────────────────── */
+.table-view {
+    -fx-background-color: white;
+    -fx-background-radius: 8;
+    -fx-effect: dropshadow(gaussian, rgba(0,0,0,0.07), 6, 0, 0, 2);
+    -fx-border-color: #E0E0E0;
+    -fx-border-radius: 8;
+}
+
+.table-view .column-header {
+    -fx-background-color: #E8EAF6;
+}
+
+.table-view .column-header .label {
+    -fx-font-weight: bold;
+    -fx-text-fill: #1A237E;
+    -fx-font-size: 12px;
+}
+
+.table-view .table-row-cell:odd {
+    -fx-background-color: #FAFAFA;
+}
+
+.table-view .table-row-cell:even {
+    -fx-background-color: white;
+}
+
+.table-view .table-row-cell:selected {
+    -fx-background-color: #C5CAE9;
+}
+
+.table-view .table-row-cell:hover {
+    -fx-background-color: #E8EAF6;
+}
